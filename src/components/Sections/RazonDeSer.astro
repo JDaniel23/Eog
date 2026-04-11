@@ -1,6 +1,7 @@
 ---
 import Titulo from "../body/Titulo.astro"
 import Subtitulo from "../body/Subtitulo.astro"
+import Razondeser from "../../assets/Razondeser.jpeg"
 const {id}=Astro.props
 ---
 
@@ -70,7 +71,7 @@ const {id}=Astro.props
     </div>
     
     <div class="rounded-2xl overflow-hidden shadow-2xl h-full max-h-[600px]">
-        <img class="object-cover w-full h-full" src="/src/assets/Razondeser.jpeg" alt="Razón de ser">
+        <img class="object-cover w-full h-full" src={Razondeser.src} alt="Razón de ser">
     </div>
 
 </section>

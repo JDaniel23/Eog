@@ -1,6 +1,7 @@
 ---
 import Titulo from "../body/Titulo.astro"
 import Subtitulo from "../body/Subtitulo.astro"
+import portafolio from "../../assets/Portafolio.jpeg"
 const {id}=Astro.props
 ---
 <div class="px-6 lg:px-16 min-h-dvh bg-black py-20">
@@ -109,7 +110,7 @@ necesidades operativas del cliente.
 </div>
 <div>
 <div class="rounded-xl overflow-hidden">
-    <img src="/src/assets/Portafolio.jpeg" alt="Portafolio de servicios">
+    <img src={portafolio.src} alt="Portafolio de servicios">
 </div>
 </div>
 

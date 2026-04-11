@@ -1,6 +1,7 @@
 ---
 import Titulo from "../body/Titulo.astro"
 import Subtitulo from "../body/Subtitulo.astro"
+import QuienesSomos from "../../assets/quienessomos.jpeg"
 const {id}=Astro.props
 ---
 
@@ -26,7 +27,7 @@ nuestros aliados.
        
     </div>
     <div class="rounded-xl overflow-hidden w-full h-full">
-        <img class="object-cover w-full h-full" src="/src/assets/quienessomos.jpeg" alt="Quienes somos">
+        <img class="object-cover w-full h-full" src={QuienesSomos.src} alt="Quienes somos">
     </div>
 </section>
 <!-- <section id={id} class="bg-black py-40 px-4">

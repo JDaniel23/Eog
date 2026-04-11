@@ -2,6 +2,7 @@
 import Titulo from "../body/Titulo.astro"
 import Subtitulo from "../body/Subtitulo.astro"
 const {id}=Astro.props
+import PropuestaValor from "../../assets/propuestadevalor.jpeg" 
 ---
 <!-- <section id={id} class="bg-black py-12 px-4">
     <div class=" mx-auto">
@@ -111,7 +112,7 @@ const {id}=Astro.props
 
         <div class="lg:sticky lg:top-24">
             <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                <img class="object-cover w-full h-auto" src="/src/assets/propuestadevalor.jpeg" alt="Propuesta de valor">
+                <img class="object-cover w-full h-auto" src={PropuestaValor.src} alt="Propuesta de valor">
             </div>
         </div>
         
