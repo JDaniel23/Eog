@@ -1,23 +1,55 @@
+---                             
+import '../styles/global.css'   
+import NavBarButton from '../components/NavBarButton.astro'
+import FooterNavegacion from '../components/FooterNavegacion.astro'
+import ContactoFooter from '../components/ContactoFooter.astro'
+import UbicacionFooter from '../components/UbicacionFooter.astro'
+---     
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>E-OIL&GAS SUPPLIES C.A</title>
 	</head>
+	<header class=" bg-gris pt-4 sticky top-0 z-50">
+		<div class="container  px-4  flex flex-wrap  items-center ">
+		<img class="block h-30"  src="/src/assets/logo.png"  alt="logo-eol">
+		</div>
+		<nav class="bg-black mt-4 py-4">
+			<div class="container mx-auto px-4 flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
+			<NavBarButton link="/#Hero" title="Inicio"/>
+			<NavBarButton link="/#adn"title="Nuestro ADN"/>
+			<NavBarButton link="/#quienesSomos" title="Quienes Somos"/>
+			<NavBarButton link="/#razondeser" title="Razon de ser"/>
+			<NavBarButton link="/#propuestadevalor" title="Propuesta de valor diferencial"/>
+			<NavBarButton link="/#portafoliodeservicios" title="Portafolio de servicios"/>
+			<NavBarButton link="/#clientes" title="Clientes"/>
+			<!-- <NavBarButton link="#"  title="Experiencia"/> -->
+			<NavBarButton  title="Contacto"/>
+		</div>
+		</nav>
+
+
+			
+	</header>
 	<body>
 		<slot />
+		<footer class="bg-black " >
+			<div class="p-20  grid md:grid-cols-3 ">
+			<FooterNavegacion/>
+			<UbicacionFooter/>
+			<ContactoFooter/>		
+			</div>
+			<div class="text-white">
+				ingenieria que integra soluciones
+			</div>
+		
+		</footer>
 	</body>
 </html>
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+

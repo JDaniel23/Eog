@@ -1,0 +1,200 @@
+---
+import Titulo from "../body/Titulo.astro"
+import Subtitulo from "../body/Subtitulo.astro"
+const {id}=Astro.props
+---
+<div class="px-6 lg:px-16 min-h-dvh bg-black py-20">
+    <section id={id} class="bg-[url(/src/assets/fondogris.jpeg)] rounded-xl overflow-hidden" >
+    <div class="p-6">
+        <Titulo title="PORTAFOLIO DE SERVICIOS"/>
+        
+    </div>
+    <div class="grid mt-4 lg:grid-cols-2 ">
+        <div class="p-10 mt-6 ml-6">
+            <Subtitulo title="CONSULTORÍA ESTRATÉGICA Y GESTIÓN DE
+ACTIVOS"/>
+                <ul class="ml-2">
+                   <li class="text-xl lg:text-2xl text-white">Estudios de Viabilidad y Pre-Inversión (FEL 1, FEL 2)</li>
+                   <li class="text-xl lg:text-2xl text-white">Gestión de Integridad de Activos</li>
+                   <li class="text-xl lg:text-2xl text-white">Rehabilitación de infraestructura existente</li>
+                   <li class="text-xl lg:text-2xl text-white">Apoyo operacional</li>
+                   <li class="text-xl lg:text-2xl text-white">Mantenimiento, RCM y extensión de vida útil</li>
+                   <li class="text-xl lg:text-2xl text-white">Eficiencia Energética y reducción de huella de carbono</li>
+                   <li class="text-xl lg:text-2xl text-white">Compliance de normativa local/internacional</li>
+                </ul>
+                <Subtitulo title="Proyectos IPC (EPC Management)"/>
+             
+                <p class="font-subtitulos text-xl lg:text-2xl mt-4 text-white">Ingeniería Desarrollo de ingeniería conceptual, básica y de
+detalle. Revisión de ingeniería de terceros (Peer Review).</p>
+        </div>
+        <div>
+             <div class="border-l-2 border-white p-10 mt-6 ">
+            <ul class="ml-10">
+                <li>
+                    <Subtitulo title="Procura Técnica"/>
+               
+                <p class="font-subtitulos text-xl lg:text-2xl text-white text-justify">
+                   Gestión estratégica de compras, inspección en fábrica
+(FAT), logística internacional y nacionalización de equipos
+críticos (válvulas, tuberías, instrumentación, rotativos).
+                </p>
+            </li>
+
+               <li>
+                <Subtitulo title="Gerencia y Supervisión de Construcción"/>
+                <p class="font-subtitulos text-xl lg:text-2xl text-white text-justify">
+                   Supervisión en campo, control de obra, aseguramiento de
+calidad (QA/QC) y gestión de contratistas
+                </p>
+            </li>
+
+             <li>
+                <Subtitulo title="Comisionamiento y Puesta en Marcha"/>
+               
+                <p class="font-subtitulos text-xl lg:text-2xl text-white text-justify">
+                 Protocolos de arranque seguro y entrega de
+instalaciones.
+                </p>
+            </li>
+
+             <li>
+               
+                <Subtitulo title="Capacitación y Entrenamiento (EO&G Academy)
+Escuela Técnica"/> 
+
+                <p class=" font-subtitulos text-xl lg:text-2xl text-white text-justify">
+                Cursos especializados en normas API, soldadura,
+inspección de equipos estáticos y rotativos,
+instrumentación y control.
+                </p>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<section class=" grid md:grid-cols-2 gap-1.5 py-20">
+
+<div class=" bg-[url(/src/assets/fondogris.jpeg)] p-10 ">
+    <Titulo title="PORTAFOLIO DE SERVICIOS"/>
+    <ul>
+        <li class="mt-4">
+            <Subtitulo title="Escuela de Gerencia de Proyectos"/>
+           
+            <p class=" font-subtitulos text-xl mt-2 lg:text-2xl text-white text-justify">
+                 Formación en metodologías ágiles y predictivas para el
+sector construcción y energía.
+        </li>
+
+        <li  class="mt-4">
+            <Subtitulo title="Seguridad Industrial (HSE)" />
+            <p class="font-subtitulos text-xl mt-2 lg:text-2xl text-white text-justify">
+               Certificaciones en manejo de riesgos, permisos de
+trabajo y respuesta a emergencias.
+        </li>
+
+         <li  class="mt-4">
+            <Subtitulo title="Programas In-Company"/>
+            <p class="font-subtitulos text-xl mt-2 lg:text-2xl text-white text-justify">
+               Mallas curriculares diseñadas a la medida de las
+necesidades operativas del cliente.
+        </li>     
+    </ul>
+</div>
+<div>
+<div class="rounded-xl overflow-hidden">
+    <img src="/src/assets/Portafolio.jpeg" alt="Portafolio de servicios">
+</div>
+</div>
+
+
+</section>
+</div>
+
+
+
+<!-- <section id={id} class="bg-[url(/src/assets/fondogris.jpeg)] bg-cover bg-fixed py-40 px-4">
+    <div class=" mx-auto">
+        
+        <div class="mb-12 border-l-8 border-white pl-6">
+            <Titulo title="PORTAFOLIO DE SERVICIOS" />
+            <p class="text-white/70 mt-2 font-subtitulos text-lg uppercase tracking-widest">Soluciones Integrales de Ingeniería y Gestión</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+            
+            <div class="bg-black/40 backdrop-blur-md p-8 rounded-xl border border-white/10 hover:border-white/40 transition-all">
+                <Subtitulo title="CONSULTORÍA Y GESTIÓN" />
+                <ul class="mt-6 space-y-4">
+                    <li class="text-white/90 text-lg flex items-start">
+                        <span class="text-white mr-2">▹</span> Estudios de Viabilidad (FEL 1, 2)
+                    </li>
+                    <li class="text-white/90 text-lg flex items-start">
+                        <span class="text-white mr-2">▹</span> Integridad de Activos y RCM
+                    </li>
+                    <li class="text-white/90 text-lg flex items-start">
+                        <span class="text-white mr-2">▹</span> Rehabilitación de Infraestructura
+                    </li>
+                    <li class="text-white/90 text-lg flex items-start">
+                        <span class="text-white mr-2">▹</span> Eficiencia Energética (Huella CO2)
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md p-8 rounded-xl border border-white/20 hover:border-white/40 transition-all">
+                <Subtitulo title="PROYECTOS IPC (EPC)" />
+                <div class="mt-6 space-y-6">
+                    <div>
+                        <h4 class="text-white font-bold mb-1">INGENIERÍA</h4>
+                        <p class="text-white/80 text-base leading-snug">Conceptual, Básica, Detalle y Peer Review.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">PROCURA TÉCNICA</h4>
+                        <p class="text-white/80 text-base leading-snug">Gestión de compras, FAT y logística internacional de equipos críticos.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-white font-bold mb-1">CONSTRUCCIÓN Y PUESTA EN MARCHA</h4>
+                        <p class="text-white/80 text-base leading-snug">Supervisión QA/QC y protocolos de arranque seguro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-azul p-8 rounded-xl shadow-2xl flex flex-col justify-between border border-white/20 hover:border-white/40 transition-all">
+                <div>
+                    <Subtitulo title="EO&G ACADEMY" />
+                    <ul class="mt-6 space-y-4">
+                        <li class="text-white text-lg">
+                            <strong class="block text-white/70 text-sm">ESCUELA TÉCNICA</strong>
+                            Normas API, Soldadura, Inspección e Instrumentación.
+                        </li>
+                        <li class="text-white text-lg">
+                            <strong class="block text-white/70 text-sm">GERENCIA DE PROYECTOS</strong>
+                            Metodologías Ágiles y Predictivas.
+                        </li>
+                        <li class="text-white text-lg">
+                            <strong class="block text-white/70 text-sm">SEGURIDAD (HSE)</strong>
+                            Manejo de riesgos y respuesta a emergencias.
+                        </li>
+                    </ul>
+                </div>
+                <p class="mt-6 text-white font-bold italic border-t border-white/20 pt-4">Programas In-Company a la medida.</p>
+            </div>
+
+        </div>
+
+        <div class="mt-12 rounded-2xl overflow-hidden h-64 lg:h-96 relative group">
+            <img 
+                src="/src/assets/Portafolio.jpeg" 
+                alt="Operaciones E-OIL&GAS" 
+                class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+        </div>
+    </div>
+</section> -->

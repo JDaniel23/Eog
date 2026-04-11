@@ -1,0 +1,68 @@
+---
+import Titulo from "../body/Titulo.astro"
+import Subtitulo from "../body/Subtitulo.astro"
+const {id}=Astro.props
+---
+
+<section id={id} class=" grid dvh  px-6 lg:px-16 lg:grid-cols-2 gap-4 bg-black py-20">
+    <div class=" bg-azul rounded-xl overflow-hidden ">
+        <div class="flex bg-[url(/src/assets/fondo.jpeg)] h-40 lg:h-85 shadow "></div>
+        <div class="flex-1  flex flex-col justify-center my-10">
+             <Titulo title="¿QUIENES SOMOS?"/>
+        <p class="font-subtitulos text-xl lg:text-2xl  mt-2 text-white text-justify p-10">
+Somos una organización dedicada a la provisión de soluciones
+tecnológicas de vanguardia para los sectores energético e industrial.
+Respaldados por un equipo de expertos con más de 40 años de
+trayectoria en instalaciones industriales y de Oil & Gas, combinamos
+experiencia técnica con una visión estratégica.
+Nuestro enfoque se fundamenta en la Gerencia de Activos (Asset
+Management), lo que nos permite optimizar cada proceso operativo y
+extender significativamente la vida útil de la infraestructura,
+garantizando la continuidad y rentabilidad de las operaciones de
+nuestros aliados.
+        </p>
+        </div>
+      
+       
+    </div>
+    <div class="rounded-xl overflow-hidden w-full h-full">
+        <img class="object-cover w-full h-full" src="/src/assets/quienessomos.jpeg" alt="Quienes somos">
+    </div>
+</section>
+<!-- <section id={id} class="bg-black py-40 px-4">
+    <div class=" mx-auto grid lg:grid-cols-2  overflow-hidden gap-4  shadow-2xl">
+        
+        <div class="bg-azul flex flex-col rounded-xl overflow-hidden">
+            <div class="bg-[url(/src/assets/fondo.jpeg)] bg-cover bg-center h-32 lg:h-48 w-full border-b-4 border-white/20"></div>
+            
+            <div class="p-8 lg:p-12 ">
+                <Titulo title="¿QUIÉNES SOMOS?" />
+                
+                <p class="font-subtitulos text-lg lg:text-xl mt-6 text-white text-justify leading-relaxed opacity-95">
+                    Somos una organización dedicada a la provisión de soluciones
+                    tecnológicas de vanguardia para los sectores energético e industrial.
+                    Respaldados por un equipo de expertos con más de <span class="font-bold border-b border-white/40">40 años de
+                    trayectoria</span> en instalaciones industriales y de Oil & Gas, combinamos
+                    experiencia técnica con una visión estratégica.
+                </p>
+                
+                <p class="font-subtitulos text-lg lg:text-xl mt-4 text-white text-justify leading-relaxed opacity-95">
+                    Nuestro enfoque se fundamenta en la **Gerencia de Activos (Asset
+                    Management)**, lo que nos permite optimizar cada proceso operativo y
+                    extender significativamente la vida útil de la infraestructura,
+                    garantizando la continuidad y rentabilidad de las operaciones.
+                </p>
+            </div>
+        </div>
+
+        <div class="relative min-h-[400px] lg:min-h-full">
+            <img 
+                class="absolute inset-0 w-full h-full object-cover rounded-xl" 
+                src="/src/assets/quienessomos.jpeg" 
+                alt="Equipo y tecnología E-OIL&GAS"
+            >
+            <div class="absolute inset-0 bg-black/10 hover:bg-transparent transition-colors duration-500"></div>
+        </div>
+        
+    </div>
+</section> -->

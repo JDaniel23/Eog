@@ -1,0 +1,13 @@
+---
+import Titulo from "../body/Titulo.astro"
+import Subtitulo from "../body/Subtitulo.astro"
+const {id}=Astro.props
+---
+<section id={id} class="min-h-dvh px-6 lg:px-20 grid md:grid-cols-2 h-dvh bg-black gap-4 py-20 ">
+        <div class="MT-6 p-10 flex justify-center">
+            <Titulo title="CLIENTES"/>          
+        </div>
+        <div class= " rounded-xl overflow-hidden ">
+            <img class="h-full w-full object-cover transform scale-x-[-1]" src="/src/assets/clientes.jpeg" alt="">
+        </div>
+</section>

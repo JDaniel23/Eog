@@ -1,0 +1,41 @@
+---
+import Titulo from "../body/Titulo.astro"
+import Subtitulo from "../body/Subtitulo.astro"
+const {id}=Astro.props
+---
+<section id={id} class="h-dvh   px-6 lg:px-16 grid lg:grid-cols-2 gap-4 py-20 bg-black">
+    <div class="bg-white p-8 lg:p-16 flex overflow-hidden rounded-xl flex-col justify-center">
+        <Titulo color="black"  title="NUESTRO ADN"/>
+            <ul class="space-y-6 mt-6">
+                <li>
+                    <Subtitulo color="Black" title="Excelencia"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl">Robustez, confiabilidad, calidad y rigor técnico</p>                                    
+                </li>
+                <li>
+                    <Subtitulo color="black" title="Visión estratégica" />
+                    <p class="font-subtitulos text-xl lg:text-2xl"> Enfocados en el ¨hoy¨, mirando el ¨mañana¨   </p>
+                </li>
+                <li>
+                      <Subtitulo color="black" title="Integridad y transparencia" />
+                    <p class="font-subtitulos text-xl lg:text-2xl"> Ética inquebrantable.  </p>                        
+                </li>
+                <li>
+                    <Subtitulo color="black" title="Seguridad integral (HSE)" />
+                    <p class="font-subtitulos text-xl lg:text-2xl"> Soluciones sostenibles, bajo la filosofía de “cero accidentes"  </p>                                        
+                </li>
+                <li>
+                    <Subtitulo color="black" title="Agilidad adaptativa" />
+                    <p class="font-subtitulos text-xl lg:text-2xl"> Flexibilidad ante los cambios </p>                                  
+                </li>
+                <li>
+                    <Subtitulo color="black" title="Compliance con estándares nacionales e internacionales:" />
+                    <p class="font-subtitulos text-xl lg:text-2xl"> PDVSA, Covenin, C.E.N., ASME, API, ISO, PMI </p>
+                </li>
+            </ul>
+       
+    </div>
+   
+    <div class="rounded-xl overflow-hidden w-full h-full">
+        <img class="object-cover w-full h-full" src="/src/assets/NuestroAdn.jpeg" alt="Nuestro ADN">
+    </div>
+</section>

@@ -1,0 +1,119 @@
+---
+import Titulo from "../body/Titulo.astro"
+import Subtitulo from "../body/Subtitulo.astro"
+const {id}=Astro.props
+---
+<!-- <section id={id} class="bg-black py-12 px-4">
+    <div class=" mx-auto">
+        
+        <div class="mb-10 border-b border-zinc-800 pb-6">
+            <Titulo title="PROPUESTA DE VALOR DIFERENCIAL" />
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-start">
+            
+            <div class="grid md:grid-cols-1 gap-8">
+                <ul class="space-y-8">
+                    <li>
+                        <Subtitulo title="Experiencia"/>
+                        <p class="font-subtitulos text-lg lg:text-xl text-zinc-300 leading-relaxed">
+                            Integramos un grupo de expertos con más de **40 años** en instalaciones industriales y de petróleo y gas.
+                        </p>
+                    </li>
+                    <li>
+                        <Subtitulo title="Especialistas en Rehabilitación"/>
+                        <p class="font-subtitulos text-lg lg:text-xl text-zinc-300 leading-relaxed">
+                            Implementamos soluciones para prolongar la operatividad de instalaciones críticas mediante diagnóstico y puesta en marcha.
+                        </p>
+                    </li>
+                    <li>
+                        <Subtitulo title="Innovación"/>
+                        <p class="font-subtitulos text-lg lg:text-xl text-zinc-300 leading-relaxed">
+                            Incorporamos soluciones tecnológicas de vanguardia y última generación.
+                        </p>
+                    </li>
+                    <li>
+                        <Subtitulo title="Competitividad"/>
+                        <p class="font-subtitulos text-lg lg:text-xl text-zinc-300 leading-relaxed">
+                            Costos de servicios altamente competitivos en relación con firmas internacionales.
+                        </p>
+                    </li>
+                    <li>
+                        <Subtitulo title="Conocimiento del Nicho"/>
+                        <p class="font-subtitulos text-lg lg:text-xl text-zinc-300 leading-relaxed">
+                            Aliado clave en la recuperación de capacidad instalada y diseño eficiente bajo criterios de **CAPEX y OPEX**.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sticky top-24">
+                <div class="relative overflow-hidden rounded-xl shadow-2xl border border-zinc-800">
+                    <img 
+                        class="w-full h-auto object-cover aspect-[4/5] lg:aspect-auto max-h-[700px]" 
+                        src="/src/assets/propuestadevalor.jpeg" 
+                        alt="Propuesta de valor diferencial"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section> -->
+
+
+ <section id={id} class="min-h-dvh bg-black py-20 px-6 lg:px-16 ">
+    <div class="mb-12">
+        <Titulo title="PROPUESTA DE VALOR DIFERENCIAL"/>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+        
+        <div class="flex flex-col  gap-10">
+            <ul class="space-y-10">
+                <li class="border-l-2 border-white pl-6">
+                    <Subtitulo title="Experiencia"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl text-white mt-2">
+                        Integramos un grupo de expertos, con más de 40 años de experiencia en instalaciones industriales y de petróleo y gas.
+                    </p>
+                </li>
+
+                <li class="border-l-2 border-white pl-6">
+                    <Subtitulo title="Especialistas en rehabilitación"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl text-white mt-2">
+                        Implementamos soluciones para prolongar la operatividad de instalaciones críticas, mediante el diagnóstico y rehabilitación de infraestructura existente.
+                    </p>
+                </li>
+
+                <li class="border-l-2 border-white pl-6">
+                    <Subtitulo title="Innovación"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl text-white mt-2">
+                        Incorporamos soluciones tecnológicas de vanguardia y última generación.
+                    </p>
+                </li>
+
+                <li class="border-l-2 border-white pl-6">
+                    <Subtitulo title="Competitividad"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl text-white mt-2">
+                        Costos de servicios competitivos en relación con empresas internacionales.
+                    </p>
+                </li>
+
+                <li class="border-l-2 border-white pl-6">
+                    <Subtitulo title="Conocimiento del nicho"/>
+                    <p class="font-subtitulos text-xl lg:text-2xl text-white mt-2">
+                        Aliado clave en la ejecución de proyectos complejos bajo criterios eficientes de CAPEX y OPEX. Conocimiento profundo del parque industrial.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="lg:sticky lg:top-24">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <img class="object-cover w-full h-auto" src="/src/assets/propuestadevalor.jpeg" alt="Propuesta de valor">
+            </div>
+        </div>
+        
+    </div>
+</section>
