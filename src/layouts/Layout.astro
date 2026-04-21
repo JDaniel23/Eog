@@ -6,6 +6,13 @@ import ContactoFooter from '../components/ContactoFooter.astro'
 import UbicacionFooter from '../components/UbicacionFooter.astro'
 import logo from '../assets/logo.png'
 import '../styles/global.css';
+import Instagram from '../assets/iconos/instagram.astro'
+import Facebook from '../assets/iconos/facebook.astro'
+import Threads from '../assets/iconos/Threads.astro'
+import Whatsapp from '../assets/iconos/Whatsapp.astro'
+import IconosHeader from '../components/header/IconosHeader.astro'
+import Titulo from '../components/body/Titulo.astro'
+import Subtitulo from '../components/body/Subtitulo.astro'
 ---     
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -17,11 +24,20 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>E-OIL&GAS SUPPLIES C.A</title>
 	</head>
-	<header class=" bg-gris pt-4 sticky top-0 z-50">
-		<div class="container  px-4  flex flex-wrap  items-center ">
-		<img class="block h-30"  src={logo.src}  alt="logo-eol">
+	<header class=" bg-gris pt-4 sticky top-0 z-50 ">
+			<div class="flex flex-wrap flex-row ">
+			<div class="px-4  flex flex-row flex-wrap justify-between  items-center  ">
+			<img class="block h-30"  src={logo.src}  alt="logo-eol">
+			</div>
+			<div class="hidden md:flex flex-row items-center ml-auto space-x-10 pr-20  ">
+				<Instagram/>
+				<Facebook/>
+				<Threads/>
+				<Whatsapp/>
+			</div>
 		</div>
-		<nav class="bg-black mt-4 py-4">
+		
+		<nav class="hidden md:block bg-black mt-4 py-4">
 			<div class="container mx-auto px-4 flex flex-wrap justify-center items-center gap-x-4 gap-y-2">
 			<NavBarButton link="/#Hero" title="Inicio"/>
 			<NavBarButton link="/#adn"title="Nuestro ADN"/>
@@ -31,7 +47,7 @@ import '../styles/global.css';
 			<NavBarButton link="/#portafoliodeservicios" title="Portafolio de servicios"/>
 			<NavBarButton link="/#clientes" title="Clientes"/>
 			<!-- <NavBarButton link="#"  title="Experiencia"/> -->
-			<NavBarButton  title="Contacto"/>
+			<NavBarButton link="/Contacto"  title="Contacto"/>
 		</div>
 		</nav>
 
@@ -46,11 +62,10 @@ import '../styles/global.css';
 			<UbicacionFooter/>
 			<ContactoFooter/>		
 			</div>
-			<!-- <div class="flex justify-center text-white pb-20">
-
-				ingenieria que integra soluciones
-			</div>
-		 -->
+			<div class="flex flex-col gap-1 space-y-5 pb-20 items-center  text-white">
+				<Titulo title="E-OIL & GAS SUPPLIES C.A."/>
+				<Subtitulo  title="Ingenieria que integra soluciones"/>
+			</div>		
 		</footer>
 	</body>
 </html>
