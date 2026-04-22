@@ -1,4 +1,7 @@
-<div class="bg-black">
+---
+const { id } = Astro.props;
+---
+<div id={id} class="bg-black">
     <section class="bg-[url(/src/assets/Portada.jpeg)] h-dvh bg-cover bg-center">
     <div class="relative flex h-full flex-col items-center justify-center text-center text-white px-4">
         <div class="absolute inset-0 bg-azul/40"></div>
